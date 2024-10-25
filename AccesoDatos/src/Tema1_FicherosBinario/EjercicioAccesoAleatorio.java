@@ -16,7 +16,7 @@ public class EjercicioAccesoAleatorio {
             File fichero = new File("C://Users//Alum_DAM//Desktop//nuevodir3//ejercicioempleado.dat");
             RandomAccessFile file = new RandomAccessFile(fichero, "rw");
 
-            int opcion;
+            int opcion, opcion2;
             do {
                 menu();
                 opcion = SC.nextInt();
@@ -34,6 +34,24 @@ public class EjercicioAccesoAleatorio {
                         modificarSalario(file);
                         break;
                     case 5:
+                    	do {
+                    		menu2();
+                    		opcion2=SC.nextInt();
+                    		switch(opcion2) {
+                    		case 1:
+                    			break;
+                    		case 2:
+                    			break;
+                    		case 3:
+                    		    System.out.println("Volviendo al menú principal...");
+                    		    opcion = 0;  // Ajusta la opción a un valor que no sea 5
+                    		    break;
+                    		default:
+                                System.out.println("Opción de menú incorrecta.");
+                    		}
+                    	}while (opcion2 != 3);
+                    	break;
+                    case 6:
                         System.out.println("Saliendo...");
                         break;
                     default:
@@ -56,8 +74,15 @@ public class EjercicioAccesoAleatorio {
         System.out.println("2. Consultar empleado");
         System.out.println("3. Eliminar empleado");
         System.out.println("4. Modificar salario de empleado");
-        System.out.println("5. Salir");
+        System.out.println("5. Gestión XML");
+        System.out.println("6. Salir");
         System.out.print("Elija una opción: ");
+    }
+    public static void menu2() {
+    	System.out.println("\nOpciones Gestión XML:");
+    	System.out.println("1. Convertir archivo a XML");
+    	System.out.println("2. Buscar por id de empleado");
+    	System.out.println("3. Salir");
     }
 
     public static void insertarEmpleado(RandomAccessFile file) {
