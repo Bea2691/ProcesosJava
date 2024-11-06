@@ -61,6 +61,7 @@ public class EstacionTrenes extends Thread {
         int totalTrenes = random.nextInt(11) + 10; 
         System.out.println("Número total de trenes que entrarán hoy a la estación: " + totalTrenes);
         
+        
         //Comienza el semaforo de las vias
         for (int i = 0; i < vias.length; i++) {
             vias[i] = new Semaphore(1); //Aquí se pone cuantos trenes permite la via a la vez
