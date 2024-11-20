@@ -13,10 +13,10 @@ public class Barca extends Thread {
     public void run() {
         try {
             while (isla.hayNaufragos()) {
-                // Rescatamos náufragos de la isla
+                //Rescatamos náufragos
                 int naufragosRescatados = isla.rescatarNaufragos(id);
 
-                // Simulamos que la barca tarda en rescatar a los náufragos
+                //Simulamos que la barca tarda en rescatarlos
                 Thread.sleep(1000);
             }
         } catch (InterruptedException e) {
