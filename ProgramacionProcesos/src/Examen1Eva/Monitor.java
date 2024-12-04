@@ -47,7 +47,7 @@ public class Monitor extends Thread{
 		System.out.println("tiempo de reacción del caballero " + this.nombreCaballero2 + ": " + tiempoReaccion2);
 		
 		//Mostrar condicion en caso de que el caballero del ejercito 1 gane
-		if(tiempoReaccion1 > tiempoReaccion2) {
+		if(tiempoReaccion1 < tiempoReaccion2) {
 			
 			//Mostrar que caballero ha ganado y el marcador
 			System.out.println("Gana el caballero " + this.nombreCaballero1 + this.idCaballero1);
@@ -61,10 +61,10 @@ public class Monitor extends Thread{
 				System.out.println("CASTILLO TOMADO POR EL EJERCITO " + this.nombreCaballero1);
 				System.exit(0);
 
-			}	
+			}
 		
 		//Mostrar la condicion en caso de que el caballero del ejercito 2 gane
-		}else if(tiempoReaccion2 > tiempoReaccion1){
+		}else if(tiempoReaccion2 < tiempoReaccion1){
 			
 			//Mostrar que caballero ha ganado y el marcador
 			System.out.println("Gana el caballero " + this.nombreCaballero2 + this.idCaballero2);

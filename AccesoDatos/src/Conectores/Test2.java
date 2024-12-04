@@ -11,8 +11,13 @@ public class Test2 {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
     	// TODO Auto-generated method stub
 
+    	
     	Class.forName("com.mysql.jdbc.Driver");
-    	Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/alumnos", "root", "");
+    	Connection conexion = DriverManager.getConnection(
+    	    "jdbc:mysql://sql.freedb.tech/freedb_ejemplo", 
+    	    "freedb_ejemplo", 
+    	    "kz4ZA%hXjY&26jG"
+    	);
    	 
     	DatabaseMetaData dbmd = conexion.getMetaData();
     	ResultSet resul, resul2, resul3;

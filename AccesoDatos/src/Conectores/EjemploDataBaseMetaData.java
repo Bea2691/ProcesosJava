@@ -15,7 +15,12 @@ public class EjemploDataBaseMetaData {
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/ejemplo", "root","");
+			Connection conexion = DriverManager.getConnection(
+		    	    "jdbc:mysql://sql.freedb.tech/freedb_ejemplo", 
+		    	    "freedb_ejemplo", 
+		    	    "kz4ZA%hXjY&26jG"
+		    	);
+		   	 
 			
 			
 			//getMetaData() --> Objeto de DataBaseMetaData, con informacion sobre la base de datos de la conexion realizada
@@ -67,7 +72,7 @@ public class EjemploDataBaseMetaData {
 				
 			}
 			
-			
+			/*
 			resul= dbmd.getPrimaryKeys(null, null, "departamentos");
 		//	resul2= dbmd.getPrimaryKeys(null, null, "empleados"); //No la tenemos no te rayes
 			resul.next();
@@ -77,7 +82,7 @@ public class EjemploDataBaseMetaData {
 			String columna = resul.getString(4);
 			String clavepk = resul.getString(6);
 			System.out.printf("\nTabla: %s - Columna: %s - Nombre Clave Primaria: %s", tabla, columna, clavepk);
-			
+			*/
 			
 			
 			conexion.close();

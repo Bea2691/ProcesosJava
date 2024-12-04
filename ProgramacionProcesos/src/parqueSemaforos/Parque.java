@@ -1,4 +1,4 @@
-package parqueSemaforos;
+ package parqueSemaforos;
 
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
