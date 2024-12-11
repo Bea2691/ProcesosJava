@@ -20,13 +20,14 @@ public class serverUDP {
 
 	            socket.receive(datagramaEntrada);
 	            String mensajeRecibido = new String(bufferLectura).trim();
-	            System.out.println("(Servidor) Mensaje recibido: " + mensajeRecibido);
+	            
+	            System.out.println("(Servidor) Edad recibida del cliente: " + mensajeRecibido);
 
 	            
 	            int edad = Integer.parseInt(mensajeRecibido);
 	            String respuesta = comprobarEdad(edad);
 
-	            System.out.println("(Servidor) Enviando informacion al clinte...");
+	            System.out.println("(Servidor) Enviando respuesta al cliente...");
 	            byte[] mensajeEnviado = respuesta.getBytes();
 	            DatagramPacket datagramaSalida = new DatagramPacket(mensajeEnviado, mensajeEnviado.length, datagramaEntrada.getAddress(), datagramaEntrada.getPort());
 
