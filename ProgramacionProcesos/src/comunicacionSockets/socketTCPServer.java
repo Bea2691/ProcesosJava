@@ -57,6 +57,7 @@ public class socketTCPServer {
 			//Con el método write manda el número al cliente
 			servidor.ou.write(200);
 			servidor.stop();
+			
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
