@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Salas" optimistic-lock="none" table="salas">
+        <id name="idsala" type="int">
+            <column name="idsala"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="nombresala" type="string">
+            <column length="20" name="nombresala" not-null="true"/>
+        </property>
+        <property name="capacidad" type="int">
+            <column name="capacidad" not-null="true"/>
+        </property>
+        <property name="tiposala" type="string">
+            <column length="8" name="tiposala" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="false" lazy="true" name="mascotases" table="asignarsala">
+            <key>
+                <column name="idsalaaux" not-null="true"/>
+            </key>
+            <many-to-many entity-name="PetnovaHN.Mascotas">
+                <column name="nchipaux" not-null="true"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

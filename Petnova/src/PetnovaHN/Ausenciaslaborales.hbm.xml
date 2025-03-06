@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Ausenciaslaborales" optimistic-lock="none" table="ausenciaslaborales">
+        <id name="idausencia" type="java.lang.Integer">
+            <column name="idausencia"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Trabajadores" fetch="select" name="trabajadores">
+            <column length="9" name="dnitaux" not-null="true"/>
+        </many-to-one>
+        <property name="tipoausencia" type="string">
+            <column length="10" name="tipoausencia" not-null="true"/>
+        </property>
+        <property name="fechainicioausencia" type="date">
+            <column length="10" name="fechainicioausencia" not-null="true"/>
+        </property>
+        <property name="fechafinalausencia" type="date">
+            <column length="10" name="fechafinalausencia">
+                <comment>null por si no se sabe el fin</comment>
+            </column>
+        </property>
+        <property name="comentarios" type="string">
+            <column length="250" name="comentarios" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

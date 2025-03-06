@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Trabajadores" optimistic-lock="none" table="trabajadores">
+
+        <id name="dnitaux" type="string">
+            <column length="9" name="dnitaux"/>
+            <!-- Specify the property for foreign id generation -->
+            <generator class="foreign">
+                <param name="property">personas</param>
+            </generator>
+        </id>
+
+        <many-to-one class="PetnovaHN.Departamentos" fetch="select" name="departamentos">
+            <column name="iddepartamentoaux" not-null="true"/>
+        </many-to-one>
+
+        <one-to-one class="PetnovaHN.Personas" constrained="true" name="personas"/>
+
+        <property generated="never" lazy="false" name="usuario" type="string">
+            <column length="15" name="usuario"/>
+        </property>
+
+        <property generated="never" lazy="false" name="pass" type="string">
+            <column length="15" name="pass"/>
+        </property>
+
+        <set fetch="select" inverse="true" lazy="true" name="ausenciaslaboraleses" sort="unsorted" table="ausenciaslaborales">
+            <key>
+                <column length="9" name="dnitaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Ausenciaslaborales"/>
+        </set>
+
+        <set fetch="select" inverse="true" lazy="true" name="chatsForDnitreceptoraux" sort="unsorted" table="chat">
+            <key>
+                <column length="9" name="dnitreceptoraux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Chat"/>
+        </set>
+
+        <set fetch="select" inverse="true" lazy="true" name="adiestramientos" sort="unsorted" table="adiestramiento">
+            <key>
+                <column length="9" name="dnitaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Adiestramiento"/>
+        </set>
+
+        <set fetch="select" inverse="true" lazy="true" name="chatsForDnitemisoraux" sort="unsorted" table="chat">
+            <key>
+                <column length="9" name="dnitemisoraux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Chat"/>
+        </set>
+
+    </class>
+
+</hibernate-mapping>

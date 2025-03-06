@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Chat" optimistic-lock="none" table="chat">
+        <id name="idchat" type="java.lang.Integer">
+            <column name="idchat"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Trabajadores" fetch="select" name="trabajadoresByDnitreceptoraux">
+            <column length="9" name="dnitreceptoraux" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="PetnovaHN.Trabajadores" fetch="select" name="trabajadoresByDnitemisoraux">
+            <column length="9" name="dnitemisoraux" not-null="true"/>
+        </many-to-one>
+        <property name="fechacreacion" type="date">
+            <column length="10" name="fechacreacion" not-null="true"/>
+        </property>
+        <property name="resuelto" type="boolean">
+            <column name="resuelto" not-null="true"/>
+        </property>
+        <property name="motivo" type="string">
+            <column length="26" name="motivo" not-null="true"/>
+        </property>
+        <property name="otromotivo" type="string">
+            <column length="80" name="otromotivo"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="archivosadjuntoses" table="archivosadjuntos">
+            <key>
+                <column name="idchataux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Archivosadjuntos"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="mensajes" table="mensaje">
+            <key>
+                <column name="idchataux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Mensaje"/>
+        </set>
+    </class>
+</hibernate-mapping>

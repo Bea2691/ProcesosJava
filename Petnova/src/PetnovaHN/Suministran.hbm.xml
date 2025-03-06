@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Suministran" optimistic-lock="none" table="suministran">
+        <id name="idsuministro" type="java.lang.Integer">
+            <column name="idsuministro"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Proveedores" fetch="select" name="proveedores">
+            <column length="15" name="nifaux" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="PetnovaHN.Servicios" fetch="select" name="servicios">
+            <column name="idservicioaux" not-null="true"/>
+        </many-to-one>
+        <property name="cantidadadquirida" type="int">
+            <column name="cantidadadquirida" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

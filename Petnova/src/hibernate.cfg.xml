@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">cesfuencarral</property>
+        <property name="hibernate.connection.url">jdbc:mysql://167.235.9.66/comsiste_petnovabd</property>
+        <property name="hibernate.connection.username">comsiste_Dam</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping resource="PetnovaHN/Salas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Direccion.hbm.xml"/>
+        <mapping resource="PetnovaHN/Departamentos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Facturas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Mensaje.hbm.xml"/>
+        <mapping resource="PetnovaHN/Suministran.hbm.xml"/>
+        <mapping resource="PetnovaHN/Grupomedicamentos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Mascotas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Consultaservicios.hbm.xml"/>
+        <mapping resource="PetnovaHN/Razamascota.hbm.xml"/>
+        <mapping resource="PetnovaHN/Personas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Provincias.hbm.xml"/>
+        <mapping resource="PetnovaHN/Adjuntosmascota.hbm.xml"/>
+        <mapping resource="PetnovaHN/Adiestramiento.hbm.xml"/>
+        <mapping resource="PetnovaHN/Ausenciaslaborales.hbm.xml"/>
+        <mapping resource="PetnovaHN/Consultas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Trabajadores.hbm.xml"/>
+        <mapping resource="PetnovaHN/Chat.hbm.xml"/>
+        <mapping resource="PetnovaHN/Reclamaciones.hbm.xml"/>
+        <mapping resource="PetnovaHN/Servicios.hbm.xml"/>
+        <mapping resource="PetnovaHN/Pesos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Clientes.hbm.xml"/>
+        <mapping resource="PetnovaHN/Medicamentos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Archivosadjuntos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Citas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Tipomascota.hbm.xml"/>
+        <mapping resource="PetnovaHN/Vacunas.hbm.xml"/>
+        <mapping resource="PetnovaHN/Empleadosantiguos.hbm.xml"/>
+        <mapping resource="PetnovaHN/Paises.hbm.xml"/>
+        <mapping resource="PetnovaHN/Proveedores.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

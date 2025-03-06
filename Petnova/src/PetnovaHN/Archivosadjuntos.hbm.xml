@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Archivosadjuntos" optimistic-lock="none" table="archivosadjuntos">
+        <id name="idarchivo" type="java.lang.Integer">
+            <column name="idarchivo"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Chat" fetch="select" name="chat">
+            <column name="idchataux" not-null="true"/>
+        </many-to-one>
+        <property name="pesoarchivo" type="string">
+            <column length="5" name="pesoarchivo" not-null="true"/>
+        </property>
+        <property name="rutaarchivo" type="string">
+            <column length="80" name="rutaarchivo" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Departamentos" optimistic-lock="none" table="departamentos">
+        <id name="iddepartamento" type="java.lang.Integer">
+            <column name="iddepartamento"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nombredepartamento" type="string">
+            <column length="15" name="nombredepartamento" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="trabajadoreses" table="trabajadores">
+            <key>
+                <column name="iddepartamentoaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Trabajadores"/>
+        </set>
+    </class>
+</hibernate-mapping>

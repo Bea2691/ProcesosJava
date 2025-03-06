@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Medicamentos" optimistic-lock="none" table="medicamentos">
+        <id name="idmedicamento" type="java.lang.Integer">
+            <column name="idmedicamento"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Grupomedicamentos" fetch="select" name="grupomedicamentos">
+            <column name="idgrupoaux" not-null="true"/>
+        </many-to-one>
+        <property name="nombremedicamento" type="string">
+            <column length="15" name="nombremedicamento" not-null="true"/>
+        </property>
+        <property name="descripcion" type="string">
+            <column length="100" name="descripcion" not-null="true"/>
+        </property>
+        <property name="dosis" type="big_decimal">
+            <column name="dosis" not-null="true" precision="10" scale="2"/>
+        </property>
+    </class>
+</hibernate-mapping>

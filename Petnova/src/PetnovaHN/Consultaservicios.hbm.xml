@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Consultaservicios" optimistic-lock="none" table="consultaservicios">
+        <composite-id class="PetnovaHN.ConsultaserviciosId" name="id">
+            <key-property name="idconsultaaux" type="int">
+                <column name="idconsultaaux"/>
+            </key-property>
+            <key-property name="idservicioaux" type="int">
+                <column name="idservicioaux"/>
+            </key-property>
+        </composite-id>
+        <many-to-one class="PetnovaHN.Consultas" fetch="select" insert="false" name="consultas" update="false">
+            <column name="idconsultaaux" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="PetnovaHN.Servicios" fetch="select" insert="false" name="servicios" update="false">
+            <column name="idservicioaux" not-null="true"/>
+        </many-to-one>
+        <property name="cantidad" type="int">
+            <column name="cantidad" not-null="true"/>
+        </property>
+        <property name="facturado" type="boolean">
+            <column name="facturado" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

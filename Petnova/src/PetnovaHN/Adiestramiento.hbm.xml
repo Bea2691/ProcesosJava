@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Adiestramiento" optimistic-lock="none" table="adiestramiento">
+        <id name="idadiestramiento" type="java.lang.Integer">
+            <column name="idadiestramiento"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Mascotas" fetch="select" name="mascotas">
+            <column name="nchipaux" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="PetnovaHN.Trabajadores" fetch="select" name="trabajadores">
+            <column length="9" name="dnitaux" not-null="true"/>
+        </many-to-one>
+        <property name="fechainicio" type="date">
+            <column length="10" name="fechainicio" not-null="true"/>
+        </property>
+        <property name="fechafinal" type="date">
+            <column length="10" name="fechafinal" not-null="true"/>
+        </property>
+        <property name="coste" type="big_decimal">
+            <column name="coste" not-null="true" precision="10" scale="2"/>
+        </property>
+    </class>
+</hibernate-mapping>

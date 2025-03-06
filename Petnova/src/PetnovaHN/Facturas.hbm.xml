@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Facturas" optimistic-lock="none" table="facturas">
+        <id name="idfactura" type="java.lang.Integer">
+            <column name="idfactura"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Personas" fetch="select" name="personas">
+            <column length="9" name="dnipaux" not-null="true"/>
+        </many-to-one>
+        <property name="fechafactura" type="date">
+            <column length="10" name="fechafactura" not-null="true"/>
+        </property>
+        <property name="archivopdf" type="binary">
+            <column name="archivopdf" not-null="false"/>
+        </property>
+    </class>
+</hibernate-mapping>

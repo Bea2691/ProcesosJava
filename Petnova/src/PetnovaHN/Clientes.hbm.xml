@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Clientes" optimistic-lock="none" table="clientes">
+        <id name="dnicaux" type="string">
+            <column length="9" name="dnicaux"/>
+            <generator class="foreign">
+                <param name="property">personas</param> <!-- The property that is related to the foreign key -->
+            </generator>
+        </id>
+        <one-to-one class="PetnovaHN.Personas" constrained="true" name="personas"/>
+        <property name="fechaalta" type="date">
+            <column length="10" name="fechaalta" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="reclamacioneses" table="reclamaciones">
+            <key>
+                <column length="9" name="dnicaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Reclamaciones"/>
+        </set>
+    </class>
+</hibernate-mapping>

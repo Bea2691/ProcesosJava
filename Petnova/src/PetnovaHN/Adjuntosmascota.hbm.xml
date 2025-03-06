@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Adjuntosmascota" optimistic-lock="none" table="adjuntosmascota">
+        <id name="idadjunto" type="java.lang.Integer">
+            <column name="idadjunto"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Mascotas" fetch="select" name="mascotas">
+            <column name="nchipaux" not-null="true"/>
+        </many-to-one>
+        <property name="fechaadjunto" type="date">
+            <column length="10" name="fechaadjunto" not-null="true"/>
+        </property>
+        <property name="archivomascota" type="binary">
+            <column name="archivomascota" not-null="true">
+                <comment>temporal como quieras el archivo</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

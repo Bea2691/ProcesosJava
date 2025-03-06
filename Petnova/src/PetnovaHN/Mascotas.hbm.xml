@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Mascotas" optimistic-lock="none" table="mascotas">
+        <id name="nchip" type="int">
+            <column name="nchip"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="PetnovaHN.Razamascota" fetch="select" name="razamascota">
+            <column name="idrazaaux" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="PetnovaHN.Personas" fetch="select" name="personas">
+            <column length="10" name="dnipaux">
+                <comment>dni persona aux</comment>
+            </column>
+        </many-to-one>
+        <property name="nombremascota" type="string">
+            <column length="15" name="nombremascota" not-null="true"/>
+        </property>
+        <property name="fechanacimiento" type="date">
+            <column length="10" name="fechanacimiento" not-null="true"/>
+        </property>
+        <property name="sexo" type="string">
+            <column length="10" name="sexo" not-null="true"/>
+        </property>
+        <property name="observaciones" type="string">
+            <column length="250" name="observaciones"/>
+        </property>
+        <property name="esterilizado" type="java.lang.Boolean">
+            <column name="esterilizado">
+                <comment>es boolean</comment>
+            </column>
+        </property>
+        <property name="fechaadopcion" type="date">
+            <column length="10" name="fechaadopcion"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="citases" table="citas">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Citas"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="vacunases" table="vacunas">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Vacunas"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="pesoses" table="pesos">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Pesos"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="adiestramientos" table="adiestramiento">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Adiestramiento"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="adjuntosmascotas" table="adjuntosmascota">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Adjuntosmascota"/>
+        </set>
+        <set fetch="select" inverse="false" lazy="true" name="salases" table="asignarsala">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <many-to-many entity-name="PetnovaHN.Salas">
+                <column name="idsalaaux" not-null="true"/>
+            </many-to-many>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="consultases" table="consultas">
+            <key>
+                <column name="nchipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Consultas"/>
+        </set>
+    </class>
+</hibernate-mapping>

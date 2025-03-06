@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Paises" optimistic-lock="none" table="paises">
+        <id name="idpais" type="java.lang.Integer">
+            <column name="idpais"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nombrepais" type="string">
+            <column length="15" name="nombrepais" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="provinciases" table="provincias">
+            <key>
+                <column name="idpaisaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Provincias"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="empleadosantiguoses" table="empleadosantiguos">
+            <key>
+                <column name="idpaisaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Empleadosantiguos"/>
+        </set>
+    </class>
+</hibernate-mapping>

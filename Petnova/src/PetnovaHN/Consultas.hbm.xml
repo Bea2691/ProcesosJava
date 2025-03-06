@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Consultas" optimistic-lock="none" table="consultas">
+        <id name="idconsulta" type="java.lang.Integer">
+            <column name="idconsulta"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Mascotas" fetch="select" name="mascotas">
+            <column name="nchipaux" not-null="true"/>
+        </many-to-one>
+        <property name="fechaconsulta" type="date">
+            <column length="10" name="fechaconsulta" not-null="true"/>
+        </property>
+        <property name="anamnesis" type="string">
+            <column length="250" name="anamnesis"/>
+        </property>
+        <property name="exploracion" type="string">
+            <column length="250" name="exploracion"/>
+        </property>
+        <property name="diagnostico" type="string">
+            <column length="250" name="diagnostico"/>
+        </property>
+        <property name="tratamiento" type="string">
+            <column length="250" name="tratamiento"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="consultaservicioses" table="consultaservicios">
+            <key>
+                <column name="idconsultaaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Consultaservicios"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Grupomedicamentos" optimistic-lock="none" table="grupomedicamentos">
+        <id name="idgrupo" type="java.lang.Integer">
+            <column name="idgrupo"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nombregrupo" type="string">
+            <column length="10" name="nombregrupo" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="medicamentoses" table="medicamentos">
+            <key>
+                <column name="idgrupoaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Medicamentos"/>
+        </set>
+    </class>
+</hibernate-mapping>

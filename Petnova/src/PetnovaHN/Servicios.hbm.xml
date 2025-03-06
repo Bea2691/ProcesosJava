@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Servicios" optimistic-lock="none" table="servicios">
+        <id name="idservicio" type="java.lang.Integer">
+            <column name="idservicio"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" not-null="true"/>
+        </property>
+        <property name="preciobase" type="big_decimal">
+            <column name="preciobase" not-null="true" precision="10" scale="2"/>
+        </property>
+        <property name="preciopvp" type="big_decimal">
+            <column name="preciopvp" not-null="true" precision="10" scale="2"/>
+        </property>
+        <property name="cantidaTotal" type="java.lang.Integer">
+            <column name="cantidaTotal" not-null="false"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="consultaservicioses" table="consultaservicios">
+            <key>
+                <column name="idservicioaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Consultaservicios"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="suministrans" table="suministran">
+            <key>
+                <column name="idservicioaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Suministran"/>
+        </set>
+    </class>
+</hibernate-mapping>

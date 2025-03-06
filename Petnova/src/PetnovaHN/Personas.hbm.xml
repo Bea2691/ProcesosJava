@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Personas" optimistic-lock="none" table="personas">
+        <id name="dni" type="string">
+            <column length="9" name="dni"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="PetnovaHN.Direccion" fetch="select" name="direccion">
+            <column name="iddireccionaux" not-null="true"/>
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column length="30" name="nombre" not-null="true"/>
+        </property>
+        <property name="apellido" type="string">
+            <column length="30" name="apellido" not-null="true"/>
+        </property>
+        <property name="telefono" type="int">
+            <column name="telefono" not-null="true"/>
+        </property>
+        <property name="email" type="string">
+            <column length="30" name="email" not-null="true"/>
+        </property>
+        <one-to-one class="PetnovaHN.Clientes" name="clientes"/>
+        <set fetch="select" inverse="true" lazy="true" name="facturases" table="facturas">
+            <key>
+                <column length="9" name="dnipaux" not-null="true"/>
+            </key>
+            <one-to-many class="PetnovaHN.Facturas"/>
+        </set>
+        <set fetch="select" inverse="true" lazy="true" name="mascotases" table="mascotas">
+            <key>
+                <column length="10" name="dnipaux">
+                    <comment>dni persona aux</comment>
+                </column>
+            </key>
+            <one-to-many class="PetnovaHN.Mascotas"/>
+        </set>
+        <one-to-one class="PetnovaHN.Trabajadores" name="trabajadores"/>
+    </class>
+</hibernate-mapping>

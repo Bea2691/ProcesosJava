@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 23 ene 2025, 19:11:43 by Hibernate Tools 6.5.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="comsiste_petnovabd" name="PetnovaHN.Citas" optimistic-lock="none" table="citas">
+        <id name="idcita" type="java.lang.Integer">
+            <column name="idcita"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="PetnovaHN.Mascotas" fetch="select" name="mascotas">
+            <column name="nchipaux" not-null="true"/>
+        </many-to-one>
+        <property name="fechacita" type="date">
+            <column length="10" name="fechacita" not-null="true"/>
+        </property>
+        <property name="motivocita" type="string">
+            <column length="200" name="motivocita" not-null="true"/>
+        </property>
+        <property name="horacita" type="time">
+            <column length="8" name="horacita" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

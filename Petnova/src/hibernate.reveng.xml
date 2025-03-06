@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="adiestramiento"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="adjuntosmascota"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="archivosadjuntos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="asignarsala"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="ausenciaslaborales"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="chat"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="citas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="clientes"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="consultas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="consultaservicios"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="departamentos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="direccion"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="empleadosantiguos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="facturas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="grupomedicamentos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="mascotas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="medicamentos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="mensaje"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="paises"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="personas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="pesos"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="proveedores"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="provincias"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="razamascota"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="reclamaciones"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="salas"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="servicios"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="suministran"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="tipomascota"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="trabajadores"/>
+  <table-filter match-catalog="comsiste_petnovabd" match-name="vacunas"/>
+</hibernate-reverse-engineering>
