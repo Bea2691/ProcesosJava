@@ -1,0 +1,4 @@
+Cliente: Navazo | Producto: Monitor | Cantidad: 1 | Precio unitario: 200.0 | Total: 200.0
+Cliente: Navazo | Producto: Teclado | Cantidad: 2 | Precio unitario: 50.0 | Total: 100.0
+Navazo, Teclado, 1
+Navazo, Teclado, 3

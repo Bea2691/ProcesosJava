@@ -1,0 +1,5 @@
+Navazo, Celular, 5
+Bea, Tablet, 1
+Lore, Tablet, 2
+Pepe, Teclado, 1
+Carlos, Teclado, 1

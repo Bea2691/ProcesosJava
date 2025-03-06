@@ -1,0 +1,5 @@
+Laptop, 1000.0, 3
+Celular, 500.0, 5
+Tablet, 300.0, 4
+Monitor, 200.0, 3
+Teclado, 50.0, 2
