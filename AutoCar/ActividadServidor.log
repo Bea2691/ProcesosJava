@@ -1,0 +1,159 @@
+2025-02-02 23:31:50 Conexión establecida con beatriz
+2025-02-02 23:31:50 Enviando listado de coches disponibles a beatriz
+2025-02-02 23:31:54 Reserva confirmada: 2 para beatriz
+2025-02-02 23:31:55 Reserva 2: REGISTRANDO
+2025-02-02 23:31:59 Reserva 2: LIMPIANDO
+2025-02-02 23:32:01 Reserva 2: ENVIANDO
+2025-02-02 23:32:04 Reserva 2: ENTREGADO
+2025-02-02 23:32:04 Reserva 2: vehículo entregado a beatriz del coche: Lamborghini Terzo Millennio
+2025-02-02 23:32:04 Conexión terminada con beatriz
+2025-02-02 23:32:14 Vehículo Lamborghini Terzo Millennio disponible nuevamente
+2025-02-02 23:43:48 Conexión establecida con a
+2025-02-02 23:43:48 Enviando listado de coches disponibles a a
+2025-02-02 23:44:54 Conexión establecida con f
+2025-02-02 23:44:54 Enviando listado de coches disponibles a f
+2025-02-02 23:44:58 Reserva confirmada: 3 para f
+2025-02-02 23:44:59 Reserva 3: REGISTRANDO
+2025-02-02 23:45:01 Reserva 3: LIMPIANDO
+2025-02-02 23:45:05 Reserva 3: ENVIANDO
+2025-02-02 23:45:06 Reserva 3: ENTREGADO
+2025-02-02 23:45:06 Reserva 3: vehículo entregado a f del coche: Porsche Taycan
+2025-02-02 23:45:06 Conexión terminada con f
+2025-02-02 23:45:16 Vehículo Porsche Taycan disponible nuevamente
+2025-02-03 00:08:50 Conexión establecida con BEATRIZ
+2025-02-03 00:08:50 Enviando listado de coches disponibles a BEATRIZ
+2025-02-03 00:10:08 Conexión establecida con LORENA
+2025-02-03 00:10:08 Enviando listado de coches disponibles a LORENA
+2025-02-03 00:10:12 Reserva confirmada: 4 para LORENA
+2025-02-03 00:10:14 Reserva 4: REGISTRANDO
+2025-02-03 00:10:18 Reserva 4: LIMPIANDO
+2025-02-03 00:10:20 Reserva 4: ENVIANDO
+2025-02-03 00:10:21 Reserva 4: ENTREGADO
+2025-02-03 00:10:21 Reserva 4: vehículo entregado a LORENA del coche: Tesla CyberTruck
+2025-02-03 00:10:21 Conexión terminada con LORENA
+2025-02-03 00:10:31 Vehículo Tesla CyberTruck disponible nuevamente
+2025-02-03 00:10:40 Conexión establecida con LOLA
+2025-02-03 00:10:40 Enviando listado de coches disponibles a LOLA
+2025-02-03 00:10:46 Reserva confirmada: 5 para LOLA
+2025-02-03 00:10:50 Reserva 5: REGISTRANDO
+2025-02-03 00:10:55 Reserva 5: LIMPIANDO
+2025-02-03 00:10:56 Reserva 5: ENVIANDO
+2025-02-03 00:11:00 Reserva 5: ENTREGADO
+2025-02-03 00:11:00 Reserva 5: vehículo entregado a LOLA del coche: BMW Vision M Next
+2025-02-03 00:11:00 Conexión terminada con LOLA
+2025-02-03 00:11:10 Vehículo BMW Vision M Next disponible nuevamente
+2025-02-03 00:11:14 Conexión establecida con PACO
+2025-02-03 00:11:14 Enviando listado de coches disponibles a PACO
+2025-02-03 00:11:19 Reserva confirmada: 6 para PACO
+2025-02-03 00:11:19 Reserva 6: REGISTRANDO
+2025-02-03 00:11:22 Reserva 6: LIMPIANDO
+2025-02-03 00:11:23 Reserva 6: ENVIANDO
+2025-02-03 00:11:23 Conexión establecida con DFG
+2025-02-03 00:11:23 Enviando listado de coches disponibles a DFG
+2025-02-03 00:11:24 Reserva 6: ENTREGADO
+2025-02-03 00:11:24 Reserva 6: vehículo entregado a PACO del coche: Mercedes-Benz Vision EQS
+2025-02-03 00:11:24 Conexión terminada con PACO
+2025-02-03 00:11:27 Reserva confirmada: 7 para DFG
+2025-02-03 00:11:31 Reserva 7: REGISTRANDO
+2025-02-03 00:11:34 Vehículo Mercedes-Benz Vision EQS disponible nuevamente
+2025-02-03 00:11:36 Reserva 7: LIMPIANDO
+2025-02-03 00:11:41 Reserva 7: ENVIANDO
+2025-02-03 00:11:45 Reserva 7: ENTREGADO
+2025-02-03 00:11:45 Reserva 7: vehículo entregado a DFG del coche: Lamborghini Terzo Millennio
+2025-02-03 00:11:45 Conexión terminada con DFG
+2025-02-03 00:11:55 Vehículo Lamborghini Terzo Millennio disponible nuevamente
+2025-02-03 00:12:35 Conexión establecida con BEATRIZ
+2025-02-03 00:12:35 Enviando listado de coches disponibles a BEATRIZ
+2025-02-03 00:13:24 Conexión establecida con PEPITA
+2025-02-03 00:13:24 Enviando listado de coches disponibles a PEPITA
+2025-02-03 00:13:44 Conexión establecida con PEPE
+2025-02-03 00:13:44 Enviando listado de coches disponibles a PEPE
+2025-02-03 00:14:04 Conexión establecida con G
+2025-02-03 00:14:04 Enviando listado de coches disponibles a G
+2025-02-03 00:27:44 Conexión establecida con BEA
+2025-02-03 00:27:44 Enviando listado de coches disponibles a BEA
+2025-02-03 20:04:41 Servidor iniciado en el puerto 12345
+2025-02-03 20:08:25 Conexión establecida con BEEEAAA
+2025-02-03 20:08:25 Enviando listado de coches disponibles a BEEEAAA
+2025-02-03 20:08:31 Reserva confirmada: 1 para BEEEAAA
+2025-02-03 20:08:34 Reserva 1: REGISTRANDO
+2025-02-03 20:08:36 Reserva 1: LIMPIANDO
+2025-02-03 20:08:41 Reserva 1: ENVIANDO
+2025-02-03 20:08:44 Reserva 1: ENTREGADO
+2025-02-03 20:08:44 Reserva 1, vehículo entregado a BEEEAAA modelo: Lamborghini Terzo Millennio
+2025-02-03 20:08:44 Conexión terminada con BEEEAAA
+2025-02-03 20:08:54 Vehículo Lamborghini Terzo Millennio disponible nuevamente
+2025-02-04 19:49:39 Servidor iniciado en el puerto 12345
+2025-02-05 01:32:41 Servidor iniciado en el puerto 12345
+2025-02-05 01:32:51 Conexión establecida con BEA
+2025-02-05 01:32:51 Enviando listado de coches disponibles a BEA
+2025-02-05 01:32:52 Reserva confirmada: 1 para BEA
+2025-02-05 01:32:56 Reserva 1: REGISTRANDO
+2025-02-05 01:33:00 Reserva 1: LIMPIANDO
+2025-02-05 01:33:03 Reserva 1: ENVIANDO
+2025-02-05 01:33:06 Reserva 1: ENTREGADO
+2025-02-05 01:33:06 Reserva 1, vehículo entregado a BEA modelo: Tesla CyberTruck
+2025-02-05 01:33:06 Conexión terminada con BEA
+2025-02-05 01:33:16 Vehículo Tesla CyberTruck disponible nuevamente
+2025-02-05 01:34:38 Conexión establecida con ASDAS
+2025-02-05 01:34:38 Enviando listado de coches disponibles a ASDAS
+2025-02-05 01:34:39 Reserva confirmada: 2 para ASDAS
+2025-02-05 01:34:42 Reserva 2: REGISTRANDO
+2025-02-05 01:34:43 Reserva 2: LIMPIANDO
+2025-02-05 01:34:46 Reserva 2: ENVIANDO
+2025-02-05 01:34:48 Reserva 2: ENTREGADO
+2025-02-05 01:34:48 Reserva 2, vehículo entregado a ASDAS modelo: Lamborghini Terzo Millennio
+2025-02-05 01:34:48 Conexión terminada con ASDAS
+2025-02-05 01:34:58 Vehículo Lamborghini Terzo Millennio disponible nuevamente
+2025-02-05 01:36:10 Conexión establecida con BBB
+2025-02-05 01:36:10 Enviando listado de coches disponibles a BBB
+2025-02-05 01:36:12 Reserva confirmada: 3 para BBB
+2025-02-05 01:36:16 Reserva 3: REGISTRANDO
+2025-02-05 01:36:21 Reserva 3: LIMPIANDO
+2025-02-05 01:36:23 Reserva 3: ENVIANDO
+2025-02-05 01:36:27 Reserva 3: ENTREGADO
+2025-02-05 01:36:27 Reserva 3, vehículo entregado a BBB modelo: BMW Vision M Next
+2025-02-05 01:36:27 Conexión terminada con BBB
+2025-02-05 01:36:37 Vehículo BMW Vision M Next disponible nuevamente
+2025-02-05 15:29:09 Servidor iniciado en el puerto 12345
+2025-02-05 15:32:27 Conexión establecida con BEA
+2025-02-05 15:32:27 Enviando listado de coches disponibles a BEA
+2025-02-05 15:32:59 Reserva confirmada: 1 para BEA
+2025-02-05 15:33:02 Reserva 1: REGISTRANDO
+2025-02-05 15:33:03 Reserva 1: LIMPIANDO
+2025-02-05 15:33:07 Reserva 1: ENVIANDO
+2025-02-05 15:33:08 Reserva 1: ENTREGADO
+2025-02-05 15:33:08 Reserva 1, vehículo entregado a BEA modelo: Tesla CyberTruck
+2025-02-05 15:33:08 Conexión terminada con BEA
+2025-02-05 15:33:18 Vehículo Tesla CyberTruck disponible nuevamente
+2025-02-14 17:50:08 Servidor iniciado en el puerto 12345
+2025-02-14 17:50:25 Conexión establecida con BEA
+2025-02-14 17:50:25 Enviando listado de coches disponibles a BEA
+2025-02-14 17:50:31 Reserva confirmada: 1 para BEA
+2025-02-14 17:50:35 Reserva 1: REGISTRANDO
+2025-02-14 17:50:40 Reserva 1: LIMPIANDO
+2025-02-14 17:50:42 Reserva 1: ENVIANDO
+2025-02-14 17:50:44 Reserva 1: ENTREGADO
+2025-02-14 17:50:44 Reserva 1, vehículo entregado a BEA modelo: Tesla CyberTruck
+2025-02-14 17:50:44 Conexión terminada con BEA
+2025-02-14 17:50:48 Conexión establecida con JJ
+2025-02-14 17:50:48 Enviando listado de coches disponibles a JJ
+2025-02-14 17:50:54 Vehículo Tesla CyberTruck disponible nuevamente
+2025-02-14 17:51:04 Conexión establecida con ASDF
+2025-02-14 17:51:04 Enviando listado de coches disponibles a ASDF
+2025-02-14 17:51:09 Reserva confirmada: 2 para JJ
+2025-02-14 17:51:12 Reserva 2: REGISTRANDO
+2025-02-14 17:51:12 Reserva confirmada: 3 para ASDF
+2025-02-14 17:51:15 Reserva 2: LIMPIANDO
+2025-02-14 17:51:17 Reserva 3: REGISTRANDO
+2025-02-14 17:51:18 Reserva 3: LIMPIANDO
+2025-02-14 17:51:18 Reserva 3: ENVIANDO
+2025-02-14 17:51:19 Reserva 2: ENVIANDO
+2025-02-14 17:51:19 Reserva 3: ENTREGADO
+2025-02-14 17:51:19 Reserva 3, vehículo entregado a ASDF modelo: BMW Vision M Next
+2025-02-14 17:51:19 Conexión terminada con ASDF
+2025-02-14 17:51:24 Reserva 2: ENTREGADO
+2025-02-14 17:51:24 Reserva 2, vehículo entregado a JJ modelo: Lamborghini Terzo Millennio
+2025-02-14 17:51:24 Conexión terminada con JJ
+2025-02-14 17:51:29 Vehículo BMW Vision M Next disponible nuevamente
+2025-02-14 17:51:34 Vehículo Lamborghini Terzo Millennio disponible nuevamente
